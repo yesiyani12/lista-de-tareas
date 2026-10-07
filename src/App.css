@@ -1,0 +1,114 @@
+#root {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.app {
+  background-color: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+   margin-bottom: 10px;
+  font-size: 30px;
+  color: #222;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #4f46e5;
+}
+
+.add-button {
+  background-color: #4f46e5 !important;
+  color: white !important;
+  padding: 14px 25px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 8px !important;
+  min-width: 120px !important;
+  height: 50px !important;
+}
+
+.add-button:hover {
+  background-color: #3730a3 !important;
+  color: white !important;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.filters button:hover {
+  background-color: #e5e5e5;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 20px 10px;
+  }
+
+  .app {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  .filters button {
+    flex: 1;
+  }
+}
