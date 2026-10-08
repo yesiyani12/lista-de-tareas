@@ -18,17 +18,16 @@ jobs:
       - name: Descargar proyecto
         uses: actions/checkout@v4
 
-      - name: Configurar Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
       - name: Instalar pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 11
 
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
       - name: Instalar dependencias
         run: pnpm install
 
