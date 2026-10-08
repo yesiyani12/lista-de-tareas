@@ -60,18 +60,17 @@ function App() {
       <Form addTodo={addTodo} />
 
    <div className="filters">
-        <button onClick={() => setFilter("all")}>
-          Todas
-        </button>
+     <i className="bi bi-funnel"></i>
 
-        <button onClick={() => setFilter("completed")}>
-          Completadas
-        </button>
-
-        <button onClick={() => setFilter("incomplete")}>
-          Pendientes
-        </button>
-      </div>
+  <select
+    value={filter}
+    onChange={(event) => setFilter(event.target.value)}
+  >
+    <option value="all">Todas</option>
+    <option value="completed">Completadas</option>
+    <option value="incomplete">Incompletas</option>
+  </select>
+</div>
 
       <TodoList
         todos={filteredTodos}

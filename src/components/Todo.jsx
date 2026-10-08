@@ -10,12 +10,12 @@ function Todo({ todo, toggleTodo, deleteTodo }) {
       </span>
 
       <button onClick={() => toggleTodo(todo.id)}>
-        ✓
-      </button>
+  <i className="bi bi-check"></i>
+</button>
 
-      <button onClick={() => deleteTodo(todo.id)}>
-        ✕
-      </button>
+<button onClick={() => deleteTodo(todo.id)}>
+  <i className="bi bi-trash"></i>
+</button>
     </div>
   );
 }

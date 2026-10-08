@@ -25,7 +25,9 @@ function Form({ addTodo }) {
         onChange={(event) => setInput(event.target.value)}
       />
 
-      <button className="add-button" type="submit"> Agregar Tarea</button>
+      <button className="add-button" type="submit">
+  <i className="bi bi-plus-circle"></i> Agregar Tarea
+</button>
     </form>
   );
 }
