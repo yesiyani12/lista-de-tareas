@@ -72,11 +72,13 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.filters button {
+.filters select {
   background-color: #f1f1f1;
   color: #333;
   padding: 8px 14px;
   font-size: 14px;
+  border: none;
+  border-radius: 8px;
 }
 
 .filters button:hover {
